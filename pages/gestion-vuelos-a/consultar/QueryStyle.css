@@ -1,0 +1,17 @@
+/* QueryStyle.css */
+.FlightQuery {
+  margin-top: 5%;
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+  margin-left: 5px;
+  border-top-left-radius: 12px;
+  background-color: white !important;
+}
+#search {
+  color: black !important !important;
+}

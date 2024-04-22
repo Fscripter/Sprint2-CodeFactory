@@ -1,8 +1,15 @@
-import { ThemeProvider } from '@mui/material'
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react'
 import '../styles/globals.css'
-import { theme } from '../theme/theme'
+import '../styles/globals.css'
+import './gestion-vuelos-a/page.module.css'
+import './gestion-vuelos-a/main.css'
+import './gestion-vuelos-a/components/flight/flight.css'
+import './gestion-vuelos-a/components/nav/nav.css'
+import './gestion-vuelos-a/components/sidebar/sidebar.css'
+import './gestion-vuelos-a/components/user/navUser.css'
+import './gestion-vuelos-a/consultar/QueryStyle.css'
+import './gestion-vuelos-a/consultar/page.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -12,11 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       jssStyles.parentElement?.removeChild(jssStyles)
     }
   }, [])
-  return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp
